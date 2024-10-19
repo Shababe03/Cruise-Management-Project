@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruise Holidays - Home</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">Cruise Holidays</div>
+
+        <!-- Links Section -->
+        <div class="links">
+            <a href="/about" class="about-btn">About</a>
+            <a href="/signin" class="signup-btn">Sign Up</a>
+            <a href="/login" class="login-btn">Login</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Cruise Holidays</h1>
+        <p>Your dream vacation on the seas awaits!</p>
+        <a href="#">Explore Cruises</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Why Cruise with Us?</h2>
+        <div class="sections">
+            <div class="section">
+                <h3>Luxury Cruises</h3>
+                <p>Enjoy top-notch amenities, spacious cabins, and fine dining on our luxurious cruise ships.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="section">
+                <h3>World-Class Destinations</h3>
+                <p>Sail to the world's most beautiful locations, from the Caribbean to the Mediterranean.</p>
+                <a href="#">Discover More</a>
+            </div>
+            <div class="section">
+                <h3>Onboard Entertainment</h3>
+                <p>Experience exciting onboard activities like live shows, pools, casinos, and more.</p>
+                <a href="#">See Activities</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Cruise Holidays. All Rights Reserved.
+    </div>
+
+</body>
+</html>

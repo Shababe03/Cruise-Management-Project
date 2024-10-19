@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navbar Links Styling */
+.navbar .links a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline */
+    transition: all 0.3s ease;
+}
+
+/* Individual Button Styling */
+.about-btn {
+    border: 2px solid white;
+}
+
+.signup-btn {
+    background-color: #ff6600;
+}
+
+.login-btn {
+    margin-right: 5vh;
+    background-color: #5477f5;
+}
+
+/* Hover Effects */
+.about-btn:hover {
+    background-color: white;
+    color: #ff6600;
+    border-color: #ff6600;
+}
+
+.signup-btn:hover {
+    background-color: #e65c00;
+}
+
+.login-btn:hover {
+    background-color: #3b5fc9;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://example.com/cruise-ship.jpg'); /* Replace with actual cruise image URL */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 0 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay to make text stand out */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #e65c00;
+}
+
+/* Content Section */
+.content {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.content .sections {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.section a {
+    color: #5477f5;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .navbar .links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar .links a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+}

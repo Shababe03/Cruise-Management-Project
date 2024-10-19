@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Cruise Holidays</div>
+        <div class="links">
+            <a href="/about">About</a>
+            <a href="/signin">Sign Up</a>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="/signin" class="signup-link">Don't have an account? Sign up</a>
+    </div>
+</body>
+</html>
