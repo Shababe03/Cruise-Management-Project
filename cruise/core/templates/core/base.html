@@ -3,60 +3,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cruise Holidays - Home</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}"> <!-- Link to external CSS file -->
+    <title>Luxury Cruises</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- Icon Library (Replace with your preferred icon library) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <!-- Logo Section -->
-        <div class="links">
-            <a href="#base" class="logo"> Cruise Holidays</a>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Luxury Cruises</a>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <div class="btn-login">
+                    <a href="/login">Login</a>
+                </div>
+                <div class="btn-signup">
+                    <a href="/signin">Sign Up</a>
+                </div>
+            </div>
+            <div id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
         </div>
-        <!-- Links Section -->
-        <div class="links">
-            <a href="/about" class="about-btn">About</a>
-            <a href="/signin" class="signup-btn">Sign Up</a>
-            <a href="/login" class="login-btn">Login</a>
-        </div>
-    </div>
+    </header>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <h1>Welcome to Cruise Holidays</h1>
-        <p>Your dream vacation on the seas awaits!</p>
-        <a href="#">Explore Cruises</a>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-        <h2>Why Cruise with Us?</h2>
-        <div class="sections">
-            <div class="section">
-                <h3>Luxury Cruises</h3>
-                <p>Enjoy top-notch amenities, spacious cabins, and fine dining on our luxurious cruise ships.</p>
-                <a href="#">Learn More</a>
+    <section class="hero">
+        <div class="container1">
+            <div class="hero__content">
+                <h1>Experience the Ultimate in Luxury Cruises</h1>
+                <p>Explore breathtaking destinations and enjoy unparalleled onboard experiences.</p>
+                <div class="hero__btns">
+                    <a href="#" class="btn-primary">Discover More</a>
+                    <a href="#" class="btn-secondary">Book Now</a>
+                </div>
             </div>
-            <div class="section">
-                <h3>World-Class Destinations</h3>
-                <p>Sail to the world's most beautiful locations, from the Caribbean to the Mediterranean.</p>
-                <a href="#">Discover More</a>
-            </div>
-            <div class="section">
-                <h3>Onboard Entertainment</h3>
-                <p>Experience exciting onboard activities like live shows, pools, casinos, and more.</p>
-                <a href="#">See Activities</a>
+            <div class="hero__image">
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container1">
+            <h2>Our Premium Services</h2>
+            <div class="service__cards">
+                <div class="service__card">
+                    <i class="ri-ship-line"></i>
+                    <h3>Cruise Packages</h3>
+                    <p>Exclusive cruise packages designed to offer the best travel experiences.</p>
+                </div>
+                <div class="service__card">
+                    <i class="ri-restaurant-line"></i>
+                    <h3>Onboard Dining</h3>
+                    <p>Indulge in gourmet dining options from world-renowned chefs.</p>
+                </div>
+                <div class="service__card">
+                    <i class="fa-sharp fa-solid fa-spa"></i>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relax and rejuvenate at our luxurious spa and wellness center.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container1">
+            <h2>Top Destinations</h2>
+            <div class="destination__cards">
+                <div class="destination__card">
+                    <img src="static/assets/destination1.jpeg" alt="Destination1">
+                    <h3>The Caribbean</h3>
+                </div>
+                <div class="destination__card">
+                    <img src="static/assets/destination2.jpeg" alt="Destination2">
+                    <h3>Alaska</h3>
+                </div>
+                <div class="destination__card">
+                    <img src="static/assets/destination3.jpeg" alt="Destination3">
+                    <h3>Mediterranean</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="container1">
+            <h2>Join Us for a Journey Like No Other</h2>
+            <a href="#" class="btn-primary">Start Your Adventure</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer">
-        &copy; 2024 Cruise Holidays. All Rights Reserved.
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Luxury Cruises. All Rights Reserved.</p>
+        </div>
+    </footer>
 
+    <script src="{% static 'javascript/base.js' %}"></script>
 </body>
 </html>
